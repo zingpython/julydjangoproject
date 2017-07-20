@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.urls import reverse
 
 class Post(models.Model):
 
@@ -16,9 +17,16 @@ class Post(models.Model):
 		ordering = ['-published']
 
 	def __str__(self):
-
 		return self.title
 
 	def __unicode__(self):
-		
-		 return str(self.title)
+		return str(self.title)
+
+	def get_absolute_url(self):
+		return reverse('detail_post', kwargs={'pk': self.pk})
+
+
+
+
+
+
