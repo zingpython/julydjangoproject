@@ -36,7 +36,7 @@ python --version
 
 Step 3. Clone github repo
 ```
-git clone https://github.com/zingpython/feb_webapp.git
+git clone https://github.com/zingpython/julydjangoproject.git
 
 ```
 
@@ -65,7 +65,7 @@ python manage.py createsuperuser
 
 Step 7. 
 Setup Static & Media Root directories.
-Make sure you are in /var/www/venv/your_folder_from_github/project/
+Make sure you are in /var/www/venv/julydjangoproject/project/
 ```
 mkdir static
 mkdir staticfiles
@@ -121,7 +121,7 @@ sudo adduser $USER www-data
 sudo chown www-data:www-data /var/www/venv/julydjangoproject/project
 sudo chown www-data:www-data /var/www/venv/julydjangoproject/project/db.sqlite3
 sudo chmod -R 775 /var/www/venv/julydjangoproject/project
-sudo chmod 777 /var/www/venv/web_app_may_8/julydjangoproject/project/posts/
+sudo chmod 777 /var/www/venv/julydjangoproject/project/posts/
 ```
 
 Step 11.
